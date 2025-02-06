@@ -37,12 +37,12 @@ public class Viaje {
 
 
     @ToString.Exclude
-    @OneToMany(mappedBy = "viaje", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "viaje")
     private Set<Reserva> reservas;
 
     @ToString.Exclude
-    @ManyToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name="codigo_catalogo",insertable = false,updatable = false)
+    @ManyToOne
+    @JoinColumn(name="codigo_catalogo")
     private Catalogo catalogo;
 
 }

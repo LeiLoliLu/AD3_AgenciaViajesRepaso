@@ -8,7 +8,7 @@
         <property name="connection.username">root</property>
         <property name="connection.password">toor</property>
         <property name="dialect">org.hibernate.dialect.MariaDBDialect</property>
-        <property name="hibernate.hbm2ddl.auto">create</property>
+        <property name="hibernate.hbm2ddl.auto">none</property>
         <property name="hibernate.show_sql">true</property>
         <mapping class="org.jesuitas.models.Cliente"/>
         <mapping class="org.jesuitas.models.Catalogo"/>

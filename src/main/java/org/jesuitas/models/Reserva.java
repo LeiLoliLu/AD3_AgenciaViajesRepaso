@@ -19,11 +19,11 @@ public class Reserva {
     @NonNull
     private String estado;
 
-    @ManyToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name="codigo_cliente",insertable = false,updatable = false)
+    @ManyToOne
+    @JoinColumn(name="codigo_cliente")
     private Cliente cliente;
 
-    @ManyToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name="codigo_viaje", insertable = false,updatable = false)
+    @ManyToOne
+    @JoinColumn(name="codigo_viaje")
     private Viaje viaje;
 }

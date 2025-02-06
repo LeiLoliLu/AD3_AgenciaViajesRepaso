@@ -33,6 +33,6 @@ public class Catalogo {
 
 
     @ToString.Exclude
-    @OneToMany(mappedBy = "catalogo", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "catalogo")
     private Set<Viaje> viajes;
 }

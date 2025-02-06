@@ -2,6 +2,7 @@ package org.jesuitas.repositories;
 
 import org.jesuitas.dao.ClienteDaoImp;
 import org.jesuitas.dao.ReservaDaoImp;
+import org.jesuitas.dao.ViajeDaoImp;
 import org.jesuitas.idao.iReservaRepo;
 import org.jesuitas.models.Cliente;
 import org.jesuitas.models.Reserva;

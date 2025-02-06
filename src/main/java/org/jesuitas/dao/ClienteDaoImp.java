@@ -41,7 +41,6 @@ public class ClienteDaoImp implements iClienteDao {
             HibernateUtils.initSession();
             HibernateUtils.session.beginTransaction();
             Cliente c = HibernateUtils.session.get(Cliente.class,codigoCliente);
-            HibernateUtils.session.getTransaction().commit();
             HibernateUtils.session.remove(c);
             HibernateUtils.session.getTransaction().commit();
             return true;
